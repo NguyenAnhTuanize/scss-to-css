@@ -2,7 +2,7 @@
 
 [Người thực hiện](https://github.com/NaTaShaRMN/)
 
-[Live](link-github-page)
+[Live](https://natasharmn.github.io/scss-to-css/public/)
 
 ## Goal
 
@@ -12,8 +12,7 @@ browser sync.
 
 ## Steps
 
-- Bước 1: **Fork** repo này, sau đó clone về để thực hiện chỉnh sửa.
-- Bước 2: Cài đặt [nodejs](https://nodejs.org/en/) nếu chưa có
+- Bước 1: Cài đặt [nodejs](https://nodejs.org/en/) nếu chưa có
 - Bước 3: Từ thư mục gốc chạy npm install.
 - Bước 4: Chạy `npm run dev` sau đó vào thư mục public bằng trình duyệt. Tiếp đó thử chạy `npm run prod`, `npm run watch` xem khác nhau như thế nào.
 
