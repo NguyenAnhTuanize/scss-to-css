@@ -52,6 +52,9 @@
                 margin: 0 auto;
                 width: 534px;
                 text-align: center;
+                @include oddBreakpoint(881px) {
+                    display: none;
+                }
                 li {
                     margin-right: 1em;
                     width: 17%;

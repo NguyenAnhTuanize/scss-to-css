@@ -54,3 +54,13 @@
         opacity: 1;
     }
 }
+
+.menu-active {
+    background: $useful-Blue;
+    color: white !important;
+}
+
+.visited {
+    background-color: rgb(41, 37, 37) !important;
+    font-weight: 600;
+}

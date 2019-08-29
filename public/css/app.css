@@ -150,6 +150,16 @@ a {
   text-decoration: none;
 }
 
+@media (min-width: 1350px) {
+  .content,
+header,
+footer,
+nav {
+    width: 1349px;
+    margin: auto;
+  }
+}
+
 header {
   color: #bababa;
   background: #343434;
@@ -179,6 +189,11 @@ header > .container .contact .social-icon {
   display: flex;
   margin: auto 0;
 }
+@media (max-width: 999px) {
+  header > .container .contact .social-icon {
+    display: none;
+  }
+}
 header > .container .contact .social-icon li {
   cursor: pointer;
   margin-left: 1.1rem;
@@ -199,6 +214,11 @@ nav > .container .nav-content img {
   height: 30px;
   margin: auto 0;
 }
+@media (max-width: 999px) {
+  nav > .container .nav-content img {
+    margin: 3rem 0;
+  }
+}
 nav > .container .nav-content .menu {
   display: flex;
 }
@@ -217,8 +237,30 @@ nav > .container .nav-content .menu li:last-child {
   margin: 3rem 0rem 3rem 8rem;
   cursor: pointer;
 }
+@media screen and (max-width: 1120px) {
+  nav > .container .nav-content .menu li:last-child {
+    margin: 3rem 0;
+  }
+}
 nav > .container .nav-content .menu li:last-child i {
   color: #929090;
+}
+@media (max-width: 999px) {
+  nav > .container .nav-content .menu {
+    display: none;
+  }
+}
+nav > .container .nav-content .menu-icon {
+  display: none;
+}
+nav > .container .nav-content .menu-icon i {
+  cursor: pointer;
+}
+@media (max-width: 999px) {
+  nav > .container .nav-content .menu-icon {
+    display: block;
+    margin: auto 0;
+  }
 }
 
 .slide {
@@ -288,11 +330,9 @@ nav > .container .nav-content .menu li:last-child i {
 
 .service .service-content {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
 }
 .service .service-content .service-content-item {
-  width: 19%;
   height: auto;
   padding: 1.4em 2em 1.4em 3em;
   font-family: sans-serif;
@@ -328,7 +368,7 @@ nav > .container .nav-content .menu li:last-child i {
 }
 
 .banner {
-  background-color: #f5f6fa;
+  background-image: url("../images/bg-banner2.jpg");
 }
 .banner .container .banner-content {
   text-align: center;
@@ -770,6 +810,11 @@ h3.achievements-title {
   width: 534px;
   text-align: center;
 }
+@media (max-width: 881px) {
+  .feedback .container .feedback-container .feedback-person {
+    display: none;
+  }
+}
 .feedback .container .feedback-container .feedback-person li {
   margin-right: 1em;
   width: 17%;
@@ -867,6 +912,16 @@ h3.achievements-title {
     opacity: 1;
   }
 }
+.menu-active {
+  background: #03a9f4;
+  color: white !important;
+}
+
+.visited {
+  background-color: #292525 !important;
+  font-weight: 600;
+}
+
 .activities .container .activities-list {
   margin: 7em 0;
   padding: 0;
@@ -1063,8 +1118,8 @@ h3.achievements-title {
   padding: 1em;
   border-radius: 100%;
   border: 1px solid;
-  width: 10px;
-  height: 10px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   font-size: 0.8em;
   text-align: center;

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <link rel="stylesheet" href="css/app.css">
     <title>Document</title>
@@ -36,14 +37,17 @@
             <div class="nav-content">
                 <img src="images/logo.png" alt="logo ne <3">
                 <ul class="menu">
-                    <li>Home</li>
-                    <li>demos</li>
-                    <li>portfolio</li>
-                    <li>blog</li>
-                    <li>shortscode</li>
-                    <li>contact</li>
+                    <li class="menu-active" onclick="activeMenu(1)">Home</li>
+                    <li onclick="activeMenu(2)">demos</li>
+                    <li onclick="activeMenu(3)">portfolio</li>
+                    <li onclick="activeMenu(4)">blog</li>
+                    <li onclick="activeMenu(5)">shortscode</li>
+                    <li onclick="activeMenu(6)">contact</li>
                     <li><i class="fa fa-search" aria-hidden="true"></i></li>
                 </ul>
+                <div class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </nav>
@@ -59,21 +63,14 @@
                         <button class="btn-slide">Discover Theme</button>
                     </div>
                     <ul class="pointer">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div onclick="currentSlides(1); stopSlide(); loopSlide(1);"></div>
+                        <div onclick="currentSlides(2); stopSlide(); loopSlide(2);"></div>
+                        <div onclick="currentSlides(3); stopSlide(); loopSlide(3);"></div>
+                        <div onclick="currentSlides(4); stopSlide(); loopSlide(4);"></div>
                     </ul>
                 </div>
             </section>
-            <section class="slide-mobile">
-                <div class="container">
-                    <div class="slide-mobile-content">
-                        <h1>Let's Build Evething with RoyalTheme!</h1>
-                        <h2>The Future of Digital Products Together</h2>
-                    </div>
-                </div>
-            </section>
+
             <section class="service">
                 <ul class="service-content">
                     <li class="service-content-item">
@@ -313,8 +310,8 @@
                 <div class="container">
                     <div class="video-container">
                         <video width="320" height="240" controls>
-                                <source src="movie.mp4" type="video/mp4">
-                                <source src="movie.ogg" type="video/ogg">
+                                <source src="https://www.youtube.com/watch?v=CnCAjIbuiX0" >
+                                <source src="https://www.youtube.com/watch?v=CnCAjIbuiX0">
                                 Your browser does not support the video tag.
                               </video>
                         <div class="video-content">
@@ -399,8 +396,8 @@
             </section>
             <section class="activities">
                 <div class="container">
-                    <ul class="activities-list">
-                        <li>
+                    <ul class="activities-list row">
+                        <li class="col-12 col-sm">
                             <div class="image-box" style="background-image: url('../images/project6.jpg'); background-size: cover;">
                                 .
                                 <span>15 March 2017</span>
@@ -411,7 +408,7 @@
                                 <span>Read More</span>
                             </div>
                         </li>
-                        <li>
+                        <li class="col-12 col-sm">
                             <div class="image-box" style="background-image: url('../images/project6.jpg'); background-size: cover;">
 
                                 <span>15 March 2017</span>
@@ -422,7 +419,7 @@
                                 <span>Read More</span>
                             </div>
                         </li>
-                        <li>
+                        <li class="col-12 col-md-4">
                             <div class="image-box" style="background-image: url('../images/project6.jpg'); background-size: cover;">
 
                                 <span>15 March 2017</span>
@@ -540,11 +537,7 @@
             <p>@ FakebyNAT 2017</p>
         </div>
     </footer>
-    <script type="text/javascript" src="js/app.js"></script>
     <script>
-        showSlide(1);
-        loopSlide(1);
-        showFeedback(4);
         var acc = document.querySelectorAll("li.awesome-tab-item.odd");
 
 
@@ -568,6 +561,7 @@
             });
         }
     </script>
+    <script type="text/javascript" src="js/app.js"></script>
 
 </body>
 

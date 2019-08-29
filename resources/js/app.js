@@ -2,6 +2,7 @@ showSlide(1);
 loopSlide(1);
 showFeedback(4);
 
+
 var temp = 1;
 
 function showInputSearch() {
@@ -17,13 +18,13 @@ function showInputSearch() {
 //// show menu
 
 
-function showMenu() {
-    var menu = document.querySelector("ul.menu");
-    if (menu.style.display == "none")
-        menu.style.display = "block";
-    else
-        menu.style.display = "none";
-};
+// function showMenu() {
+//     var menu = document.querySelector(".menu");
+//     if (menu.style.display == "none")
+//         menu.style.display = "block";
+//     else
+//         menu.style.display = "none";
+// };
 
 // document.querySelector(".menu").addEventListener("mouseout", function() {
 //     document.querySelector("ul.menu").style.display = "none";
@@ -42,7 +43,7 @@ function ramdomBanner() {
     var tail = ".jpg";
     var urlImage = head + num.toString() + tail;
     //console.log(urlImage);
-    var bgBanner = document.querySelector("section.banner");
+    var bgBanner = document.querySelector(".banner");
     bgBanner.style.backgroundImage = "url(" + urlImage + ")";
 }
 // ramdomBanner();
@@ -93,7 +94,7 @@ function currentSlides(n) {
 function showSlide(n) {
     var i;
     var slides = document.querySelector(".slide");
-    var arrDots = document.querySelectorAll("ul.pointer>i");
+    var arrDots = document.querySelectorAll(".slide .container .pointer div");
     if (n > 4) slideIndex = 1;
     if (n < 1) slideIndex = 4;
     switch (n) {
@@ -114,9 +115,9 @@ function showSlide(n) {
             break;
     }
     for (i = 0; i < arrDots.length; i++) {
-        arrDots[i].className = arrDots[i].className.replace("visit", "")
+        arrDots[i].className = arrDots[i].classList.remove("visited");
     }
-    arrDots[slideIndex - 1].className += " visited";
+    arrDots[slideIndex - 1].classList.add("visited");
 
 }
 
@@ -216,4 +217,15 @@ for (let i = 0; i < acc.length; i++) {
             panel.style.maxHeight = panel.scrollHeight + "px";
         }
     });
+}
+
+// menu active 
+
+
+function activeMenu(index) {
+    var menu = document.querySelectorAll(".menu li:not(:last-child)");
+    for (let i = 0; i < menu.length; i++) {
+        menu[i].classList.remove("menu-active");
+    }
+    menu[index - 1].classList.add("menu-active");
 }

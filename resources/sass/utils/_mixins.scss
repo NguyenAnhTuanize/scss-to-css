@@ -63,22 +63,33 @@
             @content;
         }
     }
-    @else if $class==sm {
-        @media (min-width: 768px) {
-            @content;
-        }
-    }
+    // @else if $class==sm {
+    //     @media (min-width: 768px) {
+    //         @content;
+    //     }
+    // }
     @else if $class==md {
-        @media (min-width: 992px) {
+        @media (max-width: 992px) {
             @content;
         }
     }
     @else if $class==lg {
-        @media (min-width: 1200px) {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+    @else if $class==slg {
+        @media (min-width: 1350px) {
             @content;
         }
     }
     @else {
         @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}
+
+@mixin oddBreakpoint($num) {
+    @media (max-width: $num) {
+        @content;
     }
 }

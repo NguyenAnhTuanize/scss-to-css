@@ -143,3 +143,13 @@ table {
 a {
     text-decoration: none;
 }
+
+.content,
+header,
+footer,
+nav {
+    @include breakpoint(slg) {
+        width: 1349px;
+        margin: auto;
+    }
+}

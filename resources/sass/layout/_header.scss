@@ -28,6 +28,9 @@ header {
             .social-icon {
                 display: flex;
                 margin: auto 0;
+                @include oddBreakpoint(999px) {
+                    display: none;
+                }
                 li {
                     cursor: pointer;
                     &:hover {
