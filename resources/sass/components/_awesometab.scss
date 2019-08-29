@@ -1,0 +1,82 @@
+.achievements {
+    .container {
+        @extend %container;
+    }
+}
+
+.achievements-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 5em;
+}
+
+section.awesome-tab {
+    width: 45%;
+    height: auto;
+    margin-right: 1em;
+}
+
+section.awesome-tab img {
+    width: 72px;
+    height: 69px;
+    float: left;
+    margin: 1.5em 1em 2em 0em;
+}
+
+ul.awesome-tab-list {
+    padding: 0;
+    background-color: white;
+    color: #9a8d8d;
+}
+
+li.awesome-tab-item.odd {
+    padding: 0px;
+    position: relative;
+    border-bottom: 1px solid #f0ecec;
+    cursor: pointer;
+    padding: 0.1em 0em 0em;
+    text-align: left;
+    vertical-align: middle;
+    p {
+        margin: 1em;
+    }
+}
+
+li.awesome-tab-item.odd:before {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: left;
+    padding: 17px 14px;
+    margin-right: 0.5em;
+    /* margin-left: 5px; */
+    background-color: #d6d3d3;
+}
+
+li.awesome-tab-item.even {
+    padding: 0px 0px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #f0ecec;
+    transition: max-height 0.2s ease-out;
+}
+
+li.awesome-tab-item.even>p {
+    margin: 1.5em;
+    /* padding-bottom: 34em; */
+}
+
+h3.achievements-title {
+    font-size: 2.4em;
+    font-weight: 600;
+    margin: 2.5em 0px;
+}
+
+.active {
+    background-color: #fff;
+    color: #03a9f4;
+    opacity: 1;
+    content: "/2212";
+}

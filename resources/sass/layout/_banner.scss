@@ -1,0 +1,23 @@
+.banner {
+    background-color: $bg-banner;
+    .container {
+        @extend %container;
+        .banner-content {
+            text-align: center;
+            padding-top: 7em;
+            padding-bottom: 26em;
+            p {
+                width: 100%;
+                margin: 0 auto;
+                font-size: 1.1em;
+                color: $__content;
+            }
+            h2 {
+                margin-bottom: 1.7em;
+                font-size: 1.9em;
+                font-weight: 500;
+                color: $__title;
+            }
+        }
+    }
+}

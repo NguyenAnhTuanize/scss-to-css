@@ -1,0 +1,61 @@
+.video {
+    .container {
+        @extend %container;
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 9em 0 6em;
+            video {
+                width: 45%;
+                margin-right: 1.5em;
+                height: 332px;
+            }
+            .video-content {
+                width: 45%;
+                height: auto;
+                margin-left: 1.5em;
+                margin-top: 1em;
+                h5 {
+                    font-size: 1.5em;
+                    font-weight: 100;
+                    margin-bottom: 1em;
+                }
+                p {
+                    color: #8a8989;
+                    font-size: 0.9em;
+                    margin-bottom: 2em;
+                    line-height: 1.5em;
+                }
+                a {
+                    padding: 0.6em 2em;
+                    border: 1px solid;
+                    border-radius: 45px;
+                    //color: #656565;
+                    /* box-shadow: 1px 1px 1px #6f6f6f; */
+                    position: relative;
+                    overflow: hidden;
+                    &:hover {
+                        color: white;
+                    }
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 0%;
+                        border-radius: 45px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transition: 0.1s;
+                        z-index: -1;
+                        background-color: #03a9f4;
+                    }
+                    &:hover::before {
+                        height: 100%;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+// @mixin container {
+//     margin-left: auto;
+//     margin-right: auto;
+//     height: auto;
+//     max-width: 1300px;
+//     padding: 0em 6em;
+// }
+@mixin flex-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+%container {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    max-width: 1300px;
+    padding: 0em 6em;
+}
+
+@mixin creBtn($bg-color, $color) {
+    background-color: $bg-color;
+    color: $color;
+    font-family: $most-font;
+    padding: 1em 3.4em;
+    font-size: 1em;
+    border: 0.5px solid white;
+    border-radius: 45px;
+    outline: none;
+    cursor: pointer;
+}
+
+@mixin creHover($bg-color, $color) {
+    background-color: $bg-color;
+    color: $color;
+}
+
+@mixin prev-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+@mixin titleAchive {
+    font-size: 2.4em;
+    font-weight: 500;
+    margin: 2.5em 0px;
+}
+
+@mixin breakpoint($class) {
+    @if $class==xs {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    @else if $class==sm {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @else if $class==md {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+    @else if $class==lg {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+    @else {
+        @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}

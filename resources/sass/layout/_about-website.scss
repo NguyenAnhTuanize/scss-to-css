@@ -1,0 +1,149 @@
+.about-website {
+    background-color: #313131;
+    .container {
+        @extend %container;
+        .about-website-list {
+            margin: 0;
+            padding: 0 0 6em;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            li {
+                &#recents-post {
+                    width: 25%;
+                    a {
+                        display: flex;
+                        padding: 0.5em 0;
+                        border-bottom: 1px solid #4c4c4c;
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            border: 6px solid #4a4a4a;
+                        }
+                        .recents-post-text {
+                            margin-left: 1em;
+                            margin-top: 0.4em;
+                            p {
+                                color: white;
+                                margin: 0;
+                            }
+                            small {
+                                color: #6b6b6b;
+                            }
+                        }
+                    }
+                    .about-title {
+                        color: #03a9f4;
+                        font-size: 1.2em;
+                        margin: 4em 0 3em;
+                    }
+                }
+                &#popular-tag {
+                    width: 26%;
+                    .about-title {
+                        color: #03a9f4;
+                        font-size: 1.2em;
+                        margin: 4em 0 3em;
+                    }
+                    .tags {
+                        padding: 0;
+                        color: #6b6b6b;
+                        display: flex;
+                        flex-wrap: wrap;
+                        li {
+                            padding: 0.7em 0.9em;
+                            border: 1px solid;
+                            border-radius: 45px;
+                            margin: 0.31em 0.31em 0.8em;
+                            cursor: pointer;
+                            font-size: 0.85em;
+                            &:hover {
+                                color: white;
+                                background-color: #03a9f4;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+                &#useful-links {
+                    width: 14%;
+                    .about-title {
+                        color: #03a9f4;
+                        font-size: 1.2em;
+                        margin: 4em 0 3em;
+                    }
+                    .useful-links-list {
+                        padding: 0;
+                        color: #969595;
+                        width: 78%;
+                        li {
+                            padding: 0.7em 0.2em;
+                            border-bottom: 1px solid #524d4d;
+                            cursor: pointer;
+                            &:hover {
+                                color: white;
+                            }
+                            i {
+                                font-size: 12px;
+                                padding-right: 6px;
+                            }
+                        }
+                    }
+                }
+                &#website-intro {
+                    width: 31%;
+                    padding-top: 5em;
+                    color: #969595;
+                    cursor: pointer;
+                    padding-bottom: 6em;
+                    background-color: #2d2d2d;
+                    padding-left: 7px;
+                    p {
+                        margin-top: 3em;
+                        margin-bottom: 2em;
+                        line-height: 1.7em;
+                    }
+                    .list-icon {
+                        display: flex;
+                        padding: 0;
+                        margin-bottom: 2em;
+                        width: 100%;
+                        li {
+                            width: 13.28%;
+                            margin-right: 0.5em;
+                            i {
+                                padding: 1em;
+                                border-radius: 100%;
+                                border: 1px solid;
+                                width: 10px;
+                                height: 10px;
+                                cursor: pointer;
+                                font-size: 0.8em;
+                                text-align: center;
+                                &:hover {
+                                    color: white;
+                                    background-color: #0177b5;
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                    .btn-about {
+                        padding: 0.7em 2.4em;
+                        border: 1px solid;
+                        margin-right: 0.3em;
+                        border-radius: 45px;
+                        color: #969595;
+                        &:hover {
+                            color: white;
+                            background-color: #03a9f4;
+                            transition: 0.3s ease;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

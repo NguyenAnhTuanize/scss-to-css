@@ -1,0 +1,22 @@
+.logo-advertisement {
+    background-color: #272727;
+    .container {
+        @extend %container;
+        .list-logo {
+            margin: 0;
+            padding: 4em 0;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            li {
+                width: 20%;
+                img {
+                    width: 100px;
+                    height: 87.94px;
+                    object-fit: cover;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

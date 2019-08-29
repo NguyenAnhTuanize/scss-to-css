@@ -1,0 +1,35 @@
+.question {
+    background-color: $useful-Blue;
+    .container {
+        @extend %container;
+        .question-content {
+            text-align: center;
+            padding: 5em 0;
+            h3 {
+                text-transform: uppercase;
+                padding: 0em 0 2em;
+                font-size: 2em;
+                letter-spacing: 0.04em;
+                font-weight: 600;
+                color: white;
+            }
+            .btn-question {
+                padding: 0.8em 2em;
+                margin: 0 0.5em;
+                background-color: #03a9f4;
+                border-radius: 45px;
+                color: white;
+                font-size: 1.3em;
+                outline: none;
+                cursor: pointer;
+                border: 1px solid;
+                &:hover {
+                    background-color: white;
+                    color: #03a9f4;
+                    transition: 0.3s ease;
+                    animation: auto;
+                }
+            }
+        }
+    }
+}

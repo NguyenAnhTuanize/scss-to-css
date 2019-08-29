@@ -1,0 +1,33 @@
+footer {
+    width: 100%;
+    /* display: flex; */
+    font-family: myriad pro;
+    /* justify-content: space-around; */
+    background-color: #373737;
+    color: #969595;
+    .footer-content {
+        @extend %container;
+        display: flex;
+        justify-content: space-between;
+        background-color: #343434;
+        .menu-footer {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            //width: 50%;
+            li {
+                padding: 1em;
+                text-transform: uppercase;
+                font-size: 0.9em;
+                &:hover {
+                    color: white;
+                    background-color: #03a9f4;
+                    cursor: pointer;
+                }
+            }
+        }
+        p {
+            margin: auto 0;
+        }
+    }
+}

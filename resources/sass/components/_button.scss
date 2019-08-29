@@ -1,0 +1,8 @@
+.btn-slide {
+    @include creBtn(#c3606000, white);
+    margin-right: 2em;
+    &:hover {
+        @include creHover(white, $useful-Blue);
+        transition: 0.3s ease-out;
+    }
+}

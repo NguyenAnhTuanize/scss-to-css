@@ -1,0 +1,42 @@
+    .achievements {
+        background-color: $bg-achivesment;
+        .container {
+            @extend %container;
+            .achievements-content {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                padding-bottom: 5em;
+                .company-skill {
+                    width: 45%;
+                    height: auto;
+                    .company-skill-list {
+                        margin-left: 1em;
+                        .skill-title {}
+                        .skill-percent {
+                            display: flex;
+                            margin: 1.18em 0;
+                            font-size: 1em;
+                            color: #9a8d8d;
+                            i {
+                                margin-right: 1.5em;
+                            }
+                            span {
+                                float: right;
+                                padding-top: 4px;
+                            }
+                            &>div {
+                                background-color: white;
+                                width: 100%;
+                                img {
+                                    height: 10px;
+                                    object-fit: cover;
+                                    margin-top: 7px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

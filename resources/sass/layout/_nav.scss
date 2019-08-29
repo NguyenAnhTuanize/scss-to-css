@@ -1,0 +1,35 @@
+nav {
+    background-color: white;
+    &>.container {
+        @extend %container;
+        .nav-content {
+            @include flex-box;
+            img {
+                width: 193px;
+                height: 30px;
+                margin: auto 0;
+            }
+            .menu {
+                display: flex;
+                li:not(:last-child) {
+                    padding: 3rem 1.2rem;
+                    color: $color-contact;
+                    font-family: $most-font;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $useful-Blue;
+                        color: white;
+                    }
+                }
+                li:last-child {
+                    margin: 3rem 0rem 3rem 8rem;
+                    cursor: pointer;
+                    i {
+                        color: $color-search;
+                    }
+                }
+            }
+        }
+    }
+}

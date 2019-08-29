@@ -1,0 +1,41 @@
+// header here
+header {
+    color: $color-header--text;
+    background: $color-contact;
+    &>.container {
+        //@include container;
+        @extend %container;
+        .contact {
+            height: 42px;
+            display: flex;
+            justify-content: space-between;
+            .address {
+                display: flex;
+                margin: auto 0;
+                li {
+                    font-size: 0.9rem;
+                    margin-right: 1.9rem;
+                    cursor: pointer;
+                    letter-spacing: 0.05rem;
+                    &:hover {
+                        color: white;
+                    }
+                    i {
+                        margin-right: 0.2rem;
+                    }
+                }
+            }
+            .social-icon {
+                display: flex;
+                margin: auto 0;
+                li {
+                    cursor: pointer;
+                    &:hover {
+                        color: white;
+                    }
+                    margin-left: 1.1rem;
+                }
+            }
+        }
+    }
+}

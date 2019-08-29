@@ -1,0 +1,36 @@
+.company-job {
+    .container {
+        @extend %container;
+        .list-job {
+            width: 100%;
+            margin: 7em 0 7em;
+            display: grid;
+            padding: 0;
+            grid-gap: 3em;
+            font-family: myriad pro;
+            grid-template-columns: auto auto auto;
+            li {
+                position: relative;
+                i {
+                    font-size: 1.3em;
+                    position: absolute;
+                    top: 11px;
+                }
+                .list-job-content {
+                    float: right;
+                    width: 88%;
+                    &>p {
+                        color: #9a8d8d;
+                        line-height: 1.4em;
+                    }
+                    &>h3 {
+                        font-size: 1.4em;
+                        font-weight: 500;
+                        cursor: pointer;
+                        padding-bottom: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

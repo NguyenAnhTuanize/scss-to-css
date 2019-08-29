@@ -1,0 +1,48 @@
+.slide {
+    background-color: $color-contact;
+    width: 100%;
+    height: auto;
+    color: white;
+    .container {
+        @extend %container;
+        .slide-content {
+            width: 75%;
+            padding-top: 8em;
+            padding-bottom: 11em;
+            h1 {
+                font-size: 6rem;
+                font-family: $sans-font;
+                padding-bottom: 1rem;
+                font-weight: 600;
+            }
+            h3 {
+                font-size: 3rem;
+                font-family: $sans-font;
+                font-weight: 500;
+                letter-spacing: 0.05em;
+                padding-bottom: 2rem;
+            }
+            p {
+                width: 92%;
+                font-size: 1em;
+                font-family: sans-serif;
+                padding-bottom: 5rem;
+                line-height: 23px;
+                word-spacing: 1px;
+            }
+        }
+        .pointer {
+            width: 60px;
+            padding-bottom: 1rem;
+            margin: 0 auto;
+            @include flex-box;
+            div {
+                cursor: pointer;
+                margin-right: 0.2em;
+                background-color: #b5acac;
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}
