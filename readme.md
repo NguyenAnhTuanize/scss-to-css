@@ -1,8 +1,10 @@
 # Base project for using Laravel mix 
 
-[Người thực hiện](https://github.com/NaTaShaRMN/)
+[Người thực hiện](https://github.com/NaTaShaRMN/) : 
 
 [Live](https://natasharmn.github.io/scss-to-css/public/)
+
+[PSD](https://github.com/NaTaShaRMN/scss-to-css/blob/master/resources/Home_3.psd)
 
 ## Goal
 
