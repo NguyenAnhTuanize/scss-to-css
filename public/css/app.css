@@ -340,7 +340,7 @@ nav > .container .nav-content .menu-icon i {
   border-bottom: 1px solid #ece5e5;
   /* border-right: 1px solid #ece5e5; */
   /* background-color: white; */
-  background-image: url("../images/bg-service.png");
+  background-image: url("images/bg-service.png");
   background-size: cover;
 }
 .service .service-content .service-content-item:hover {
@@ -368,7 +368,8 @@ nav > .container .nav-content .menu-icon i {
 }
 
 .banner {
-  background-image: url("../images/bg-banner2.jpg");
+  background-image: url("images/bg-banner2.jpg");
+  background-size: cover;
 }
 .banner .container .banner-content {
   text-align: center;
@@ -1014,6 +1015,29 @@ h3.achievements-title {
 .visited {
   background-color: #292525 !important;
   font-weight: 600;
+}
+
+.facebook {
+  padding: 7px 9px !important;
+  background-color: #31aae2;
+  border-radius: 50%;
+}
+
+.twitter {
+  background-color: #55acee;
+  border-radius: 50%;
+}
+
+.google {
+  background-color: #d24033;
+  border-radius: 50%;
+  padding: 7px 6px !important;
+}
+
+.linkedin {
+  background-color: #0274b3;
+  border-radius: 50%;
+  padding: 7px 8px !important;
 }
 
 .activities .container .activities-list {

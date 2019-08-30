@@ -99,16 +99,16 @@ function showSlide(n) {
     if (n < 1) slideIndex = 4;
     switch (n) {
         case 1:
-            slides.style.backgroundImage = "url('../images/slide1.jpg')";
+            slides.style.backgroundImage = "url('images/slide1.jpg')";
             break;
         case 2:
-            slides.style.backgroundImage = "url('../images/slide2.jpg')";
+            slides.style.backgroundImage = "url('images/slide2.jpg')";
             break;
         case 3:
-            slides.style.backgroundImage = "url('../images/slide3.jpg')";
+            slides.style.backgroundImage = "url('images/slide3.jpg')";
             break;
         case 4:
-            slides.style.backgroundImage = "url('../images/slide4.jpg')";
+            slides.style.backgroundImage = "url('images/slide4.jpg')";
             break;
 
         default:
