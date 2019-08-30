@@ -368,7 +368,7 @@ nav > .container .nav-content .menu-icon i {
 }
 
 .banner {
-  background-image: url("images/bg-banner2.jpg");
+  background-image: url("../images/bg-banner2.jpg");
   background-size: cover;
 }
 .banner .container .banner-content {
