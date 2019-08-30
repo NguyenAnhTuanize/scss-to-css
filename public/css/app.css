@@ -758,6 +758,7 @@ h3.achievements-title {
 .leader .container .leader-list > li:nth-child(odd) .leader-item-text small {
   text-transform: uppercase;
   color: #03a9f4;
+  font-size: 0.7em;
 }
 .leader .container .leader-list > li:nth-child(odd) .leader-item-text h4 {
   text-transform: uppercase;
@@ -770,6 +771,7 @@ h3.achievements-title {
 .leader .container .leader-list > li:nth-child(even) .leader-item-text small {
   text-transform: uppercase;
   color: #03a9f4;
+  font-size: 0.7em;
 }
 .leader .container .leader-list > li:nth-child(even) .leader-item-text h4 {
   text-transform: uppercase;
