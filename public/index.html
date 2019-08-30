@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <link rel="stylesheet" href="css/app.css">
 
@@ -15,6 +15,7 @@
 <body onload="showSlide(1);
 loopSlide(1);
 showFeedback(4);">
+    <a id="button"></a>
     <header>
         <div class="container">
             <div class="contact">
@@ -641,6 +642,24 @@ showFeedback(4);">
         }
     </script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script>
+        var btn = $("#button");
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass("show");
+            } else {
+                btn.removeClass("show");
+            }
+        });
+
+        btn.on("click", function(e) {
+            e.preventDefault();
+            $("html, body").animate({
+                scrollTop: 0
+            }, "300");
+        });
+    </script>
 
 </body>
 
