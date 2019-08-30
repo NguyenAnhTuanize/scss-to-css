@@ -340,7 +340,7 @@ nav > .container .nav-content .menu-icon i {
   border-bottom: 1px solid #ece5e5;
   /* border-right: 1px solid #ece5e5; */
   /* background-color: white; */
-  background-image: url("images/bg-service.png");
+  background-image: url("../images/bg-service.png");
   background-size: cover;
 }
 .service .service-content .service-content-item:hover {
