@@ -1,26 +1,24 @@
-# Base project for using Laravel mix 
+# PHP basic
 
-[Người thực hiện](https://github.com/NaTaShaRMN/) : 
+## Tiêu đề bài tập 
+- Sử dụng webstack hoặc sử dụng chế độ server để tạo 1 project server giao diện đã làm ở bài 3.
 
-[Live](https://natasharmn.github.io/scss-to-css/public/)
+Thực hiện bởi: [Nguyễn Đức Thanh](https://github.com/khoaitayran9x)
 
-[PSD](https://github.com/NaTaShaRMN/scss-to-css/blob/master/resources/Home_3.psd)
+## Liên kết
+- Link docs : [here](https://www.tutorialspoint.com/php/index.htm) , 
 
-## Goal
+## Kiến thức nắm được
+- Cách chạy code php qua terminal, run built-in server
+- Tìm hiểu cách chạy php qua webstacks : Apache, Xampp...
+- Ôn tập về php cơ bản và php hướng đối tượng
 
-- Sử dụng Laravel mix nhưng không phải trong 1 Laravel project
-- Cấu trúc cơ bản của 1 frontend project để làm quen với html template, sass,
-browser sync.
-- Tiếp tục sử dụng html, css, js
+## Run
 
-## Steps
+- Trong thư mục dự án mở terminal gõ lệnh:
 
-- Bước 1: Cài đặt [nodejs](https://nodejs.org/en/) nếu chưa có
-- Bước 3: Từ thư mục gốc chạy npm install.
-- Bước 4: Chạy `npm run dev` sau đó vào thư mục public bằng trình duyệt. Tiếp đó thử chạy `npm run prod`, `npm run watch` xem khác nhau như thế nào.
+```console
+$ php -S localhost:8000
+```
 
-## Trainee
-
-- Tên : Nguyễn Anh Tuấn 
-- Ngày thực hiện : 29/8/2019
-- Link online : 
+- Tiến hành mở trình duyệt lên vào địa chỉ localhost:8000
