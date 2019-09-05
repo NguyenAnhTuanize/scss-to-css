@@ -5,7 +5,7 @@ mix.options({
 });
 mix.copyDirectory('resources/images', 'public/images');
 mix.copyDirectory('resources/fonts', 'public/fonts');
-mix.copyDirectory('resources/*.html', 'public/');
+mix.copyDirectory('resources/*.php', 'public/');
 
 mix.sass('resources/sass/app.scss', 'public/css/')
     .scripts(['resources/js/app.js'], 'public/js/app.js');
